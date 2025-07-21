@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Dashboard\UserController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontendController;
@@ -53,6 +54,10 @@ Route::middleware('auth')->group(function () {
     Route::get('admin/products/{id}/edit',[ProductsController::class,'edit'])->name('admin_product_edit');
     Route::put('admin/product/{product}', [ProductsController::class, 'update'])->name('admin_product_update');
 
+    Route::get('admin/users',[UserController::class,'index'])->name('admin_users');
+    Route::get('admin/users/create',[UserController::class,'create'])->name('admin_users_create');
+    Route::post('admin/users/create',[UserController::class,'store'])->name('admin_users_store');
+    Route::delete('admin/users/{id}', [UserController::class, 'destroy'])->name('admin_users_destroy');
 
 });
 

@@ -53,7 +53,7 @@
                         <button type="submit" class="btn btn-grd-primary px-4">
                             {{ isset($product) ? 'Update' : 'Submit' }}
                         </button>
-                        <button type="reset" class="btn btn-grd-royal px-4">Reset</button>
+                        {{-- <button type="reset" class="btn btn-grd-royal px-4">Reset</button> --}}
                     </div>
                 </div>
 

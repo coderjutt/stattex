@@ -1,6 +1,6 @@
 
    <footer class="page-footer">
 
-    <p class="mb-0">Copyright © 2024. All right reserved.</p>
+    <p class="mb-0">Copyright © 2025.Desgin by Startex Marketing All right reserved.</p>
 
   </footer>

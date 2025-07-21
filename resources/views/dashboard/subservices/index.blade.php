@@ -22,6 +22,7 @@
                         <tr>
 
                             <th>Name</th>
+                            <th>Service</th>
                             <th>icon</th>
                             <th>Description</th>
                             <th>action</th>
@@ -33,6 +34,8 @@
                         @foreach ($subServices as $service)
                             <tr>
                                 <td>{{ $service->name }}</td>
+                                <td>{{ $service->service->name }}</td>
+
                                 <td>
                                     @if ($service->icon)
                                         <img src="{{ asset('storage/' . $service->icon) }}" alt="Icon" width="40"

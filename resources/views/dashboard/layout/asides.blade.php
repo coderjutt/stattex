@@ -5,7 +5,7 @@
         <img src="assets/images/logo-icon.png" class="logo-img" alt="">
       </div>
       <div class="logo-name flex-grow-1">
-        <h5 class="mb-0">Maxton</h5>
+        <h5 class="mb-0">Startex</h5>
       </div>
       <div class="sidebar-close">
         <span class="material-icons-outlined">close</span>
@@ -44,7 +44,7 @@
             </a>
           </li>
           <li>
-            <a href="javascript:;" class="has-arrow">
+            <a href="{{route('admin_users')}}" class="has-arrow">
               <div class="parent-icon"><i class="material-icons-outlined">home</i>
               </div>
               <div class="menu-title">Users</div>

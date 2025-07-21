@@ -48,7 +48,9 @@ figure, header, nav, section, article, aside, footer, figcaption {
 }
 
 /* ---- .grid-item ---- */
-
+.sapce{
+  margin-top: -80px !important;
+}
 .grid-sizer,
 .grid-item {
   width: 50%;
@@ -109,9 +111,11 @@ html, body {
 
   .breadcrumb-section {
         
-        background-size: cover;
-        padding: 60px 0;
-        color: #fff;
+      background-size: cover !important;
+    padding-top: 164px;
+    color: #fff;
+    padding-bottom: 90px;
+
     }
 
     .breadcrumb-section .breadcrumb {
@@ -194,6 +198,7 @@ body {
 }
 .gap{
   margin-bottom: 30px;
+  margin-top: 46px;
 }
 .section-heading h2 {
   font-size: 30px;
@@ -896,8 +901,8 @@ Banner Style
   position: absolute;
   left: 0;
   top: 100px;
-  width: 267px;
-  height: 532px;
+  width: 100%;
+  height: 100%;
 }
 
 .main-banner:before {
@@ -907,9 +912,9 @@ Banner Style
   background-size: cover;
   position: absolute;
   right: 0;
-  top: 100px;
-  width: 819px;
-  height: 674px;
+  top: 70px;
+  width: 50%;
+  height: 60%;
 }
 
 .main-banner .item {
@@ -941,6 +946,7 @@ Banner Style
 
 .main-banner .item p {
   margin: 20px 0px;
+  height: 140px;
 }
 
 .main-banner .item .down-buttons {
@@ -969,7 +975,8 @@ Banner Style
 }
 
 .main-banner .owl-dots {
-  margin-top: 60px;
+  /* margin-top: 60px; */
+  display: none;
   counter-reset: dots;
 }
 
@@ -991,6 +998,15 @@ Banner Style
   color: #ff685f;
   border-bottom: 3px solid #ff685f;
 }
+.client-logo {
+    max-height: 80px;
+    max-width: 100px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
 
 
 /* 
@@ -1006,6 +1022,7 @@ Services Style
   top: -140px;
   position: absolute;
   z-index: 1;
+   pointer-events: none;
 }
 
 .our-services .services-right-dec img {
@@ -1025,7 +1042,7 @@ Services Style
 .our-services {
   position: relative;
   margin-top: 0px;
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 
 .our-services .section-heading {
@@ -1811,7 +1828,7 @@ Footer Style
 
 .footer-dec {
   width: 100%;
-  margin-top: 160px;
+  /* margin-top: 160px; */
 }
 
 footer {

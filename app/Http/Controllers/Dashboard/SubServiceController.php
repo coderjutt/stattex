@@ -41,13 +41,13 @@ class SubServiceController extends Controller
         return redirect()->route('admin_subservices')->with('success', 'SubService created successfully.');
     }
 
-public function edit($id)
-{
-    $subservice = SubService::findOrFail($id); // fetch manually by ID
-    $services = Services::all();
+    public function edit($id)
+    {
+        $subservice = SubService::findOrFail($id); // fetch manually by ID
+        $services = Services::all();
 
-    return view('dashboard.subservices.edit', compact('subservice', 'services'));
-}
+        return view('dashboard.subservices.edit', compact('subservice', 'services'));
+    }
 
 
    

@@ -13,26 +13,29 @@
         @endif
 
         <div class="card-body p-4">
+            <h5 class="mb-4">Add New User</h5>
 
-            <h5 class="mb-4">Add New Update</h5>
-
-            <form class="row g-3" method="POST" action="{{ route('admin_products_store') }}" enctype="multipart/form-data">
+            <form class="row g-3" method="POST" action="{{ route('admin_users_store') }}">
                 @csrf
 
                 <div class="col-md-6">
-                    <label for="input1" class="form-label">Service Name</label>
-                    <input type="text" class="form-control" name="name" id="input1"
-                        placeholder="Enter service name">
-                </div>
-                <div class="col-md-6">
-                    <label for="icon" class="form-label">Upload Icon</label>
-                    <input id="icon" type="file" class="form-control" name="image"
-                        accept=".jpg, .png, .jpeg, .svg, .webp">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" name="name" id="username" placeholder="Enter username">
                 </div>
 
                 <div class="col-md-6">
-                    <label for="input11" class="form-label">Description</label>
-                    <textarea class="form-control" name="description" id="input11" placeholder="Description ..." rows="3"></textarea>
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" name="password" id="password" placeholder="Enter password">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="password_confirmation" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" name="password_confirmation" id="password_confirmation" placeholder="Confirm password">
                 </div>
 
                 <div class="col-md-12">
@@ -42,9 +45,6 @@
                     </div>
                 </div>
             </form>
-
-
         </div>
-
     </div>
 @endsection

@@ -22,10 +22,10 @@
                                     </div>
                                 </div>
                                 <div class="item header-text">
-                                    <h6>Online Marketing</h6>
-                                    <h2>Get the <em>best ideas</em> for <span>your website</span></h2>
-                                    <p>You are NOT allowed to redistribute this template ZIP file on any Free CSS collection
-                                        websites. Contact us for more info. Thank you.</p>
+                                    <h6>News</h6>
+                                    <h2>Our <em>Latest <span>Updates</span></h2>
+                                    <p>Startex has been conferred GOLD Membership by the Mystery Shopping Professionals Association
+                                    (MSPA-AP) at the 19th annual conference in Hong Kong.</p>
                                     <div class="down-buttons">
                                         <div class="main-blue-button-hover">
                                             <a href="#services">Our Services</a>
@@ -36,17 +36,17 @@
                                     </div>
                                 </div>
                                 <div class="item header-text">
-                                    <h6>Video Tutorials</h6>
-                                    <h2>Watch <em>our videos</em> for your <span>projects</span></h2>
-                                    <p>Please <a rel="nofollow" href="https://www.paypal.me/templatemo"
-                                            target="_blank">support us</a> a little via PayPal if this digital marketing
-                                        HTML template is useful for you. Thank you.</p>
+                                    <h6>Technology</h6>
+                                    <h2>Online <em>reporting system</em></h2>
+                                    <p>Our online reporting system is a user-friendly, high-performance platform built to industry standards. It offers real-time data integration,
+                                         customizable features, and clear,
+                                         actionable insights—empowering clients to make informed decisions with ease.</p>
                                     <div class="down-buttons">
                                         <div class="main-blue-button-hover">
-                                            <a href="#video">Watch Videos</a>
+                                            <a href="{{route('about_us')}}">About Us</a>
                                         </div>
                                         <div class="call-button">
-                                            <a href="#"><i class="fa fa-phone"></i> 050-040-0320</a>
+                                            <a href="#"><i class="fa fa-phone"></i> +92-42-35782381 / 2</a>
                                         </div>
                                     </div>
                                 </div>
@@ -57,8 +57,8 @@
             </div>
         </div>
     </div>
-
-    <div id="services" class="our-services section">
+{{-- <hr> --}}
+    <div id="services" class="our-services sapce section">
         <div class="services-right-dec">
             <img src="assets/images/services-right-dec.png" alt="">
         </div>
@@ -221,50 +221,34 @@
 
                     <div class="carousel-inner py-3 text-center">
 
-                        <!-- Slide 1 -->
-                        <div class="carousel-item active">
-                            <div class="d-flex justify-content-center gap-4 flex-wrap">
-                                <img src="{{ asset('assets/images/clients/audio1.webp') }}" class="img-fluid"
-                                    style="height: 80px; width: 80px;" alt="Logo 1">
-                                <img src="{{ asset('assets/images/clients/audio2.webp') }}" class="img-fluid"
-                                    style="height: 80px; width: 80px;" alt="Logo 2">
-                                <img src="{{ asset('assets/images/clients/audio3.webp') }}" class="img-fluid"
-                                    style="height: 80px; width: 80px;" alt="Logo 3">
-                                <img src="{{ asset('assets/images/clients/audio4.webp') }}" class="img-fluid"
-                                    style="height: 80px; width: 80px;" alt="Logo 4">
-                            </div>
-                        </div>
+                     <!-- Slide 1 -->
+<div class="carousel-item active">
+    <div class="d-flex justify-content-center gap-4 flex-wrap">
+        <img src="{{ asset('assets/images/clients/audio1.webp') }}" class="img-fluid client-logo" alt="Logo 1">
+        <img src="{{ asset('assets/images/clients/audio2.webp') }}" class="img-fluid client-logo" alt="Logo 2">
+        <img src="{{ asset('assets/images/clients/audio3.webp') }}" class="img-fluid client-logo" alt="Logo 3">
+        <img src="{{ asset('assets/images/clients/audio4.webp') }}" class="img-fluid client-logo" alt="Logo 4">
+    </div>
+</div>
 
-                        <!-- Slide 2 -->
-                        <div class="carousel-item">
-                            <div class="d-flex justify-content-center gap-4 flex-wrap">
-                                <img src="{{ asset('assets/images/clients/bank1.webp') }}" class="img-fluid"
-                                    style="height: 80px; width: 80px;" alt="Logo 5">
-                                <img src="{{ asset('assets/images/clients/bank2.webp') }}" class="img-fluid"
-                                    style="height: 80px; width: 80px;" alt="Logo 6">
-                                <img src="{{ asset('assets/images/clients/bank3.webp') }}" class="img-fluid"
-                                    style="height: 80px; width: 80px;" alt="Logo 7">
-                                <img src="{{ asset('assets/images/clients/bank4.webp') }}" class="img-fluid"
-                                    style="height: 80px; width: 80px;" alt="Logo 8">
-                                <img src="{{ asset('assets/images/clients/bank5.webp') }}" class="img-fluid"
-                                    style="height: 80px; width: 80px;" alt="Logo 5">
-                                <img src="{{ asset('assets/images/clients/bank6.webp') }}" class="img-fluid"
-                                    style="height: 80px; width: 80px;" alt="Logo 6">
-                                <img src="{{ asset('assets/images/clients/bank7.webp') }}" class="img-fluid"
-                                    style="height: 80px; width: 80px;" alt="Logo 7">
-                                <img src="{{ asset('assets/images/clients/bank8.webp') }}" class="img-fluid"
-                                    style="height: 80px; width: 80px;" alt="Logo 8">
-                                <img src="{{ asset('assets/images/clients/bank9.webp') }}" class="img-fluid"
-                                    style="height: 80px; width: 80px;" alt="Logo 5">
-                                <img src="{{ asset('assets/images/clients/bank10.webp') }}" class="img-fluid"
-                                    style="height: 80px; width: 80px;" alt="Logo 6">
-                                <img src="{{ asset('assets/images/clients/bank11.webp') }}" class="img-fluid"
-                                    style="height: 80px; width: 80px;" alt="Logo 7">
-                                <img src="{{ asset('assets/images/clients/bank12.webp') }}" class="img-fluid"
-                                    style="height: 80px; width: 80px;" alt="Logo 8">
+<!-- Slide 2 -->
+<div class="carousel-item">
+    <div class="d-flex justify-content-center gap-4 flex-wrap">
+        <img src="{{ asset('assets/images/clients/bank1.webp') }}" class="img-fluid client-logo" alt="Logo 5">
+        <img src="{{ asset('assets/images/clients/bank2.webp') }}" class="img-fluid client-logo" alt="Logo 6">
+        <img src="{{ asset('assets/images/clients/bank3.webp') }}" class="img-fluid client-logo" alt="Logo 7">
+        <img src="{{ asset('assets/images/clients/bank4.webp') }}" class="img-fluid client-logo" alt="Logo 8">
+        <img src="{{ asset('assets/images/clients/bank5.webp') }}" class="img-fluid client-logo" alt="Logo 9">
+        <img src="{{ asset('assets/images/clients/bank6.webp') }}" class="img-fluid client-logo" alt="Logo 10">
+        <img src="{{ asset('assets/images/clients/bank7.webp') }}" class="img-fluid client-logo" alt="Logo 11">
+        <img src="{{ asset('assets/images/clients/bank8.webp') }}" class="img-fluid client-logo" alt="Logo 12">
+        <img src="{{ asset('assets/images/clients/bank9.webp') }}" class="img-fluid client-logo" alt="Logo 13">
+        <img src="{{ asset('assets/images/clients/bank10.webp') }}" class="img-fluid client-logo" alt="Logo 14">
+        {{-- <img src="{{ asset('assets/images/clients/bank11.webp') }}" class="img-fluid client-logo" alt="Logo 15">
+        <img src="{{ asset('assets/images/clients/bank12.webp') }}" class="img-fluid client-logo" alt="Logo 16"> --}}
+    </div>
+</div>
 
-                            </div>
-                        </div>
 
                     </div>
                 </div>

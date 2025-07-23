@@ -4,7 +4,7 @@
             <div class="col-lg-3">
                 <div class="about footer-item">
                     <div class="logo">
-                        <a href="#"><img src="{{ asset('assets/images/logo.gif') }}"
+                        <a href="{{route('home')}}"><img src="{{ asset('assets/images/logo.gif') }}"
                                 alt="Onix Digital TemplateMo"></a>
                     </div>
                     <a href="#">info@startexmarketing.com</a>
@@ -62,7 +62,7 @@
                     <p>Copyright © Startex Co., Ltd. All Rights Reserved.
                         <br>
                         Designed by <a rel="nofollow" href="http://www.startexmarketing.com/"
-                            title="free CSS templates">Startex</a>
+                            title="Startex">Startex</a>
                     </p>
                 </div>
             </div>

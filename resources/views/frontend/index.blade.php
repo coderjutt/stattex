@@ -24,26 +24,28 @@
                                 <div class="item header-text">
                                     <h6>News</h6>
                                     <h2>Our <em>Latest <span>Updates</span></h2>
-                                    <p>Startex has been conferred GOLD Membership by the Mystery Shopping Professionals Association
-                                    (MSPA-AP) at the 19th annual conference in Hong Kong.</p>
+                                    <p>Startex has been conferred GOLD Membership by the Mystery Shopping Professionals
+                                        Association
+                                        (MSPA-AP) at the 19th annual conference in Hong Kong.</p>
                                     <div class="down-buttons">
                                         <div class="main-blue-button-hover">
                                             <a href="#services">Our Services</a>
                                         </div>
                                         <div class="call-button">
-                                            <a href="#"><i class="fa fa-phone"></i> 090-080-0760</a>
+                                            <a href="#"><i class="fa fa-phone"></i>+92-42-35782381 / 2</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item header-text">
                                     <h6>Technology</h6>
                                     <h2>Online <em>reporting system</em></h2>
-                                    <p>Our online reporting system is a user-friendly, high-performance platform built to industry standards. It offers real-time data integration,
-                                         customizable features, and clear,
-                                         actionable insights—empowering clients to make informed decisions with ease.</p>
+                                    <p>Our online reporting system is a user-friendly, high-performance platform built to
+                                        industry standards. It offers real-time data integration,
+                                        customizable features, and clear,
+                                        actionable insights—empowering clients to make informed decisions with ease.</p>
                                     <div class="down-buttons">
                                         <div class="main-blue-button-hover">
-                                            <a href="{{route('about_us')}}">About Us</a>
+                                            <a href="{{ route('about_us') }}">About Us</a>
                                         </div>
                                         <div class="call-button">
                                             <a href="#"><i class="fa fa-phone"></i> +92-42-35782381 / 2</a>
@@ -57,7 +59,7 @@
             </div>
         </div>
     </div>
-{{-- <hr> --}}
+    {{-- <hr> --}}
     <div id="services" class="our-services sapce section">
         <div class="services-right-dec">
             <img src="assets/images/services-right-dec.png" alt="">
@@ -221,33 +223,47 @@
 
                     <div class="carousel-inner py-3 text-center">
 
-                     <!-- Slide 1 -->
-<div class="carousel-item active">
-    <div class="d-flex justify-content-center gap-4 flex-wrap">
-        <img src="{{ asset('assets/images/clients/audio1.webp') }}" class="img-fluid client-logo" alt="Logo 1">
-        <img src="{{ asset('assets/images/clients/audio2.webp') }}" class="img-fluid client-logo" alt="Logo 2">
-        <img src="{{ asset('assets/images/clients/audio3.webp') }}" class="img-fluid client-logo" alt="Logo 3">
-        <img src="{{ asset('assets/images/clients/audio4.webp') }}" class="img-fluid client-logo" alt="Logo 4">
-    </div>
-</div>
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center gap-4 flex-wrap">
+                                <img src="{{ asset('assets/images/clients/audio1.webp') }}" class="img-fluid client-logo"
+                                    alt="Logo 1">
+                                <img src="{{ asset('assets/images/clients/audio2.webp') }}" class="img-fluid client-logo"
+                                    alt="Logo 2">
+                                <img src="{{ asset('assets/images/clients/audio3.webp') }}" class="img-fluid client-logo"
+                                    alt="Logo 3">
+                                <img src="{{ asset('assets/images/clients/audio4.webp') }}" class="img-fluid client-logo"
+                                    alt="Logo 4">
+                            </div>
+                        </div>
 
-<!-- Slide 2 -->
-<div class="carousel-item">
-    <div class="d-flex justify-content-center gap-4 flex-wrap">
-        <img src="{{ asset('assets/images/clients/bank1.webp') }}" class="img-fluid client-logo" alt="Logo 5">
-        <img src="{{ asset('assets/images/clients/bank2.webp') }}" class="img-fluid client-logo" alt="Logo 6">
-        <img src="{{ asset('assets/images/clients/bank3.webp') }}" class="img-fluid client-logo" alt="Logo 7">
-        <img src="{{ asset('assets/images/clients/bank4.webp') }}" class="img-fluid client-logo" alt="Logo 8">
-        <img src="{{ asset('assets/images/clients/bank5.webp') }}" class="img-fluid client-logo" alt="Logo 9">
-        <img src="{{ asset('assets/images/clients/bank6.webp') }}" class="img-fluid client-logo" alt="Logo 10">
-        <img src="{{ asset('assets/images/clients/bank7.webp') }}" class="img-fluid client-logo" alt="Logo 11">
-        <img src="{{ asset('assets/images/clients/bank8.webp') }}" class="img-fluid client-logo" alt="Logo 12">
-        <img src="{{ asset('assets/images/clients/bank9.webp') }}" class="img-fluid client-logo" alt="Logo 13">
-        <img src="{{ asset('assets/images/clients/bank10.webp') }}" class="img-fluid client-logo" alt="Logo 14">
-        {{-- <img src="{{ asset('assets/images/clients/bank11.webp') }}" class="img-fluid client-logo" alt="Logo 15">
-        <img src="{{ asset('assets/images/clients/bank12.webp') }}" class="img-fluid client-logo" alt="Logo 16"> --}}
-    </div>
-</div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center gap-4 flex-wrap">
+                                <img src="{{ asset('assets/images/clients/bank1.webp') }}" class="img-fluid client-logo"
+                                    alt="Logo 5">
+                                <img src="{{ asset('assets/images/clients/bank2.webp') }}" class="img-fluid client-logo"
+                                    alt="Logo 6">
+                                <img src="{{ asset('assets/images/clients/bank3.webp') }}" class="img-fluid client-logo"
+                                    alt="Logo 7">
+                                <img src="{{ asset('assets/images/clients/bank4.webp') }}" class="img-fluid client-logo"
+                                    alt="Logo 8">
+                                <img src="{{ asset('assets/images/clients/bank5.webp') }}" class="img-fluid client-logo"
+                                    alt="Logo 9">
+                                <img src="{{ asset('assets/images/clients/bank6.webp') }}" class="img-fluid client-logo"
+                                    alt="Logo 10">
+                                <img src="{{ asset('assets/images/clients/bank7.webp') }}" class="img-fluid client-logo"
+                                    alt="Logo 11">
+                                <img src="{{ asset('assets/images/clients/bank8.webp') }}" class="img-fluid client-logo"
+                                    alt="Logo 12">
+                                <img src="{{ asset('assets/images/clients/bank9.webp') }}" class="img-fluid client-logo"
+                                    alt="Logo 13">
+                                <img src="{{ asset('assets/images/clients/bank10.webp') }}" class="img-fluid client-logo"
+                                    alt="Logo 14">
+                                {{-- <img src="{{ asset('assets/images/clients/bank11.webp') }}" class="img-fluid client-logo" alt="Logo 15">
+                                <img src="{{ asset('assets/images/clients/bank12.webp') }}" class="img-fluid client-logo" alt="Logo 16"> --}}
+                            </div>
+                        </div>
 
 
                     </div>
@@ -262,12 +278,29 @@
     <div id="subscribe" class="subscribe">
         <div class="container">
             <div class="row">
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul class="mb-0">
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
+                @if (session('success'))
+                    <div class="alert alert-success">
+                        {{ session('success') }}
+                    </div>
+                @endif
+
                 <div class="col-lg-12">
                     <div class="inner-content">
                         <div class="row">
                             <div class="col-lg-10 offset-lg-1">
-                                <h2>Know Your Website SEO Score by Email</h2>
-                                <form id="subscribe" action="" method="get">
+                                <h2>Subscribe Newsletters</h2>
+                                <form id="subscribe" action="{{ route('subscribers.store') }}" method="post">
+                                    @csrf
                                     <input type="text" name="website" id="website" placeholder="Your Website URL"
                                         required="">
                                     <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*"

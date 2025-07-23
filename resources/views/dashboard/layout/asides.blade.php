@@ -44,6 +44,13 @@
             </a>
           </li>
           <li>
+            <a href="{{route('admin_subscribers')}}" class="has-arrow">
+              <div class="parent-icon"><i class="material-icons-outlined">home</i>
+              </div>
+              <div class="menu-title">Subscribers</div>
+            </a>
+          </li>
+           <li>
             <a href="{{route('admin_users')}}" class="has-arrow">
               <div class="parent-icon"><i class="material-icons-outlined">home</i>
               </div>

@@ -47,7 +47,7 @@ class FrontendController extends Controller
         'message' => $request->message,
     ];
     $subject = $request->subject;
-    Mail::to('umair.577155@gmail.com')->send(new ContactFormMail($details,$subject));
+    Mail::to('startex577@gmail.com')->send(new ContactFormMail($details,$subject));
 
     return back()->with('success', 'Your message has been sent successfully!');
 }

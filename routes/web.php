@@ -8,6 +8,7 @@ use App\Http\Controllers\Dashboard\DashboardController;
 use App\Http\Controllers\Dashboard\ServicesController;
 use App\Http\Controllers\Dashboard\SubServiceController;
 use App\Http\Controllers\Dashboard\ProductsController;
+use App\Http\Controllers\Dashboard\SubscriberController;
 
 
 // frontend Routes 
@@ -17,6 +18,12 @@ Route::get('services',[FrontendController::class,'services'])->name('services');
 Route::get('products',[FrontendController::class,'product'])->name('product');
 Route::get('contact',[FrontendController::class,'contact'])->name('contact');
 Route::post('/contact', [FrontendController::class, 'submitContactForm'])->name('contact.submit');
+Route::post('/subscribers/store', [SubscriberController::class, 'store'])->name('subscribers.store');
+Route::get('/subscribers/store', function () {
+    return redirect('/'); // or wherever you want to send people
+});
+
+
 
 // Route::get('/Dashboard', function () {
 //     return view('Dashboard.index');
@@ -58,6 +65,11 @@ Route::middleware('auth')->group(function () {
     Route::get('admin/users/create',[UserController::class,'create'])->name('admin_users_create');
     Route::post('admin/users/create',[UserController::class,'store'])->name('admin_users_store');
     Route::delete('admin/users/{id}', [UserController::class, 'destroy'])->name('admin_users_destroy');
+
+    // subscribers
+    Route::get('admin/subscribers',[SubscriberController::class,'index'])->name('admin_subscribers');
+    Route::get('/admin/subscribers/export', [SubscriberController::class, 'export'])->name('subscribers.export');
+
 
 });
 

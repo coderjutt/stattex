@@ -11,10 +11,11 @@ use App\Mail\ContactFormMail;
 class FrontendController extends Controller
 {
     public function index(){
-      $services=Services::with('subservice')->take(3)->get();
+      $services=Services::with('subservice')->take(6)->get();
+       $subservices=SubService::take(12)->get();
       $product=Products::take(5)->get();
 
-        return view('frontend/index',compact('services','product'));
+        return view('frontend/index',compact('services','subservices','product'));
     }
      public function about(){
         return view('frontend/about');

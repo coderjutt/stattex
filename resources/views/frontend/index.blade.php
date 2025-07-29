@@ -1,11 +1,60 @@
 @extends('frontend/layout/app')
 @section('content')
-    <div class="main-banner" id="top">
+    <div class="main-banner" id="top" style="--dynamic-bg: url('{{ asset('assets/images/12.png') }}')">
+        <!-- Right Wave -->
+        <div class="wave-overlay right">
+            <img src="{{ asset('assets/images/banner-layout.png') }}" alt="" srcset="">
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row">
-                        <div class="col-lg-6 align-self-center">
+                        <div class="col-lg-6 align-self-center custom-carousel">
+                            <div class="owl-carousel owl-banner">
+                                <div class="item header-text">
+                                    <h6>Welcome to Startex</h6>
+                                    <h2>Turn <em>great ideas</em> into <span>powerful marketing</span></h2>
+                                    <p>We turn strategy into sales — creative marketing that drives real results and helps
+                                        your business grow.</p>
+                                    {{-- <div class="down-buttons">
+                                        <div class="main-blue-button-hover">
+                                            <a href="{{ route('contact') }}">Message Us Now</a>
+                                        </div>
+                                        <div class="call-button">
+                                            <a href="#"><i class="fa fa-phone"></i>+92-42-35782381 / 2</a>
+                                        </div>
+                                    </div> --}}
+                                </div>
+                                <div class="item header-text">
+                                    <h6>News</h6>
+                                    <h2>Our <em>Latest <span>Updates</span></h2>
+                                    <p>Startex has been conferred GOLD Membership by the Mystery Shopping Professionals
+                                        Association
+                                        (MSPA-AP) at the 19th annual conference in Hong Kong.</p>
+                                </div>
+                                <div class="item header-text">
+                                    <h6>Technology</h6>
+                                    <h2>Online <em>reporting system</em></h2>
+                                    <p>Our online reporting system is a user-friendly, high-performance platform built to
+                                        industry standards. It offers real-time data integration,
+                                        customizable features, and clear,
+                                        actionable insights—empowering clients to make informed decisions with ease.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {{-- <div class="main-banner" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6 align-self-center custom-carousel">
                             <div class="owl-carousel owl-banner">
                                 <div class="item header-text">
                                     <h6>Welcome to Startex</h6>
@@ -58,14 +107,14 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     {{-- <hr> --}}
     <div id="services" class="our-services sapce section">
         <div class="services-right-dec">
             <img src="assets/images/services-right-dec.png" alt="">
         </div>
         <div class="container">
-            <div class="services-left-dec">
+            {{-- <div class="services-left-dec">
                 <img src="assets/images/services-left-dec.png" alt="">
             </div>
             <div class="row">
@@ -75,27 +124,27 @@
                         <span>Our Services</span>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <div class="row">
                 @foreach ($services as $service)
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="item border p-3 rounded shadow-sm h-100">
+                    <div class="col-lg-2 col-md-4 col-sm-6 custom_ser_item">
+                        <div class="item border rounded shadow-sm">
                             <h4>{{ $service->name }}</h4>
                             <div class="icon mb-2">
                                 <img src="{{ asset('storage/' . $service->icon) }}" alt=""
                                     style="width: 60px; height: 60px;">
                             </div>
-                            <hr class="mt-3">
+                            {{-- <hr class="mt-3"> --}}
                             {{-- List subcategories --}}
-                            @if ($service->subservice->count())
+                            {{-- @if ($service->subservice->count())
                                 <ul class="subservice-list ps-3">
                                     @foreach ($service->subservice as $sub)
                                         <li>{{ $sub->name }}</li>
                                     @endforeach
                                 </ul>
-                            @else
-                                <p class="text-muted">No subcategories available.</p>
-                            @endif
+                            @else --}}
+                            {{-- <p class="text-muted">No subcategories available.</p>
+                            @endif --}}
                         </div>
                     </div>
                 @endforeach
@@ -200,8 +249,6 @@
                                 </div>
                             </div>
                         @endforeach
-
-
                     </div>
                 </div>
             </div>
@@ -316,9 +363,53 @@
     </div>
 
 
+    <!-- Popup Modal -->
+    <div class="modal fade" id="welcomePopup" tabindex="-1" aria-labelledby="welcomePopupLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="welcomePopupLabel">Welcome to Startex</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    🚀 Get ready for powerful insights and real results!
+                </div>
+                <div class="modal-footer">
+                    <a href="{{route('product')}}" class="btn btn-success">Lets Go</a>
+                    {{-- <button type="button" class="btn btn-success" data-bs-dismiss="modal">Let's Go</button> --}}
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div class="footer-dec">
         <img src="assets/images/footer-dec.png" alt="">
     </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const backgrounds = [
+                "{{ asset('assets/images/12.png') }}",
+                "{{ asset('assets/images/2.jpg') }}",
+                "{{ asset('assets/images/3.jpg') }}"
+            ];
+
+            let current = 0;
+
+            setInterval(() => {
+                current = (current + 1) % backgrounds.length;
+                document.querySelector('.main-banner').style.setProperty('--dynamic-bg',
+                    `url('${backgrounds[current]}')`);
+            }, 5000); // change every 5 seconds
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const popup = new bootstrap.Modal(document.getElementById('welcomePopup'));
+            popup.show();
+        });
+    </script>
+
+
 @endsection

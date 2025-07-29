@@ -30,7 +30,7 @@
                           <li class="scroll-to-section"><a href="{{ route('product') }}">Our Product</a></li>
                           <li class="scroll-to-section"><a href="{{ route('contact') }}">Contact Us</a></li>
                           <li class="scroll-to-section">
-                              <div class="main-red-button-hover"><a href="{{route('contact')}}">Contact Us Now</a></div>
+                              {{-- <div class="main-red-button-hover"><a href="{{route('contact')}}">Contact Us Now</a></div> --}}
                           </li>
                       </ul>
                       <a class='menu-trigger'>
